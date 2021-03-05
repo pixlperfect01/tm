@@ -34,8 +34,8 @@ def to_obj_string(arr):
         out += f"f {e} {e+1} {e+4} {e+2}\n"
         out += f"f {e+3} {e+6} {e+7} {e+5}\n"
         out += f"f {e} {e+3} {e+5} {e+2}\n"
-        # out += f"f {} {} {} {}\n"
-        # out += f"f {} {} {} {}\n"
+        out += f"f {e+1} {e+4} {e+7} {e+6}\n"
+        out += f"f {e+2} {e+4} {e+7} {e+5}\n"
     return out
 from fs.osfs import OSFS
 home_fs = OSFS("")
