@@ -33,7 +33,7 @@ def to_obj_string(arr):
         out += f"f {e} {e+1} {e+6} {e+3}\n"
         out += f"f {e} {e+1} {e+4} {e+2}\n"
         out += f"f {e+3} {e+6} {e+7} {e+5}\n"
-        out += f"f {e} {e+1} {e+3} {e+4}\n"
+        out += f"f {e} {e+1} {e+2} {e+4}\n"
         # out += f"f {} {} {} {}\n"
         # out += f"f {} {} {} {}\n"
     return out
