@@ -7,26 +7,26 @@ def gen_chunk_section(seed, chunk_x, section_y, chunk_z):
         for y in range(0,5):
             for z in range(16):
                 if(rand_gen.randint(0, 8)>=y):
-                    out += [[x,y,z]]
+                    out += [[x,y,z,0.0,0.0,0.0]]
     return out
 def to_obj_string(arr):
     out = ""
     for e in arr:
-        out += f"v {e[0]} {e[1]} {e[2]}\n"
+        out += f"v {e[0]} {e[1]} {e[2]} {e[3]} {e[4]} {e[5]}\n"
 
-        out += f"v {e[0]+1} {e[1]} {e[2]}\n"
+        out += f"v {e[0]+1} {e[1]} {e[2]} {e[3]} {e[4]} {e[5]}\n"
 
-        out += f"v {e[0]} {e[1]+1} {e[2]}\n"
+        out += f"v {e[0]} {e[1]+1} {e[2]} {e[3]} {e[4]} {e[5]}\n"
 
-        out += f"v {e[0]} {e[1]} {e[2]+1}\n"
+        out += f"v {e[0]} {e[1]} {e[2]+1} {e[3]} {e[4]} {e[5]}\n"
 
-        out += f"v {e[0]+1} {e[1]+1} {e[2]}\n"
+        out += f"v {e[0]+1} {e[1]+1} {e[2]} {e[3]} {e[4]} {e[5]}\n"
 
-        out += f"v {e[0]} {e[1]+1} {e[2]+1}\n"
+        out += f"v {e[0]} {e[1]+1} {e[2]+1} {e[3]} {e[4]} {e[5]}\n"
 
-        out += f"v {e[0]+1} {e[1]} {e[2]+1}\n"
+        out += f"v {e[0]+1} {e[1]} {e[2]+1} {e[3]} {e[4]} {e[5]}\n"
 
-        out += f"v {e[0]+1} {e[1]+1} {e[2]+1}\n"
+        out += f"v {e[0]+1} {e[1]+1} {e[2]+1} {e[3]} {e[4]} {e[5]}\n"
 
     for l in range(len(arr)):
         e = l*8+1
