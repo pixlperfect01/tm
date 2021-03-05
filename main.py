@@ -28,10 +28,10 @@ def to_obj_string(arr):
 
         out += f"v {e[0]+1} {e[1]+1} {e[2]+1}\n"
 
-    for f in range(len(arr)):
-        e = f*8+1
+    for l in range(len(arr)):
+        e = l*8+1
         out += f"f {e} {e+1} {e+6} {e+3}\n"
-        out += f"f {e} {e+1} {e+4} {e+2}\n"
+        # out += f"f {e} {e+1} {e+4} {e+2}\n"
         # out += f"f {e+3} {e+6} {e+7} {e+5}\n"
         # out += f"f {} {} {} {}\n"
         # out += f"f {} {} {} {}\n"
