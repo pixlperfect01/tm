@@ -1,0 +1,45 @@
+[[package]]
+category = "main"
+description = "A Minecraft anvil file format parser"
+name = "anvil-parser"
+optional = false
+python-versions = "*"
+version = "0.9.0"
+
+[package.dependencies]
+frozendict = "*"
+nbt = "*"
+
+[[package]]
+category = "main"
+description = "An immutable dictionary"
+name = "frozendict"
+optional = false
+python-versions = "*"
+version = "1.2"
+
+[[package]]
+category = "main"
+description = "Named Binary Tag Reader/Writer"
+name = "nbt"
+optional = false
+python-versions = "*"
+version = "1.5.0"
+
+[metadata]
+content-hash = "8f9d895d5d2913179c352e408f0ddaf0fff35f8fb52a7250c8443684b70c196b"
+python-versions = "^3.8"
+
+[metadata.files]
+anvil-parser = [
+    {file = "anvil-parser-0.9.0.tar.gz", hash = "sha256:7cd457cf465c1d6d8f6dc52b0689a56e84e498c1a4c27802e725ede982698f9d"},
+    {file = "anvil_parser-0.9.0-py3-none-any.whl", hash = "sha256:e3e6284194b7db0f2e7b7a4b2437e0215961eba1ef94ab1080c0a100ad8145dc"},
+]
+frozendict = [
+    {file = "frozendict-1.2.tar.gz", hash = "sha256:774179f22db2ef8a106e9c38d4d1f8503864603db08de2e33be5b778230f6e45"},
+]
+nbt = [
+    {file = "NBT-1.5.0-py2.py3-none-any.whl", hash = "sha256:77dcf9d3fcb41a04fe7f407e902cf78c1dadc589d2e68d0a77e1b62b64a9be7e"},
+    {file = "NBT-1.5.0-py3-none-any.whl", hash = "sha256:834505e9137d00ab5b098979b4e1d383a14061e80364a7f1b9587839b2743f5e"},
+    {file = "NBT-1.5.0.tar.gz", hash = "sha256:f3585248e6747c6ede39be49a9d54ade8f63ce9beb42a6682c0323d32073c7f9"},
+]
