@@ -12,11 +12,36 @@ nbt = "*"
 
 [[package]]
 category = "main"
+description = "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
+name = "appdirs"
+optional = false
+python-versions = "*"
+version = "1.4.4"
+
+[[package]]
+category = "main"
 description = "An immutable dictionary"
 name = "frozendict"
 optional = false
 python-versions = "*"
 version = "1.2"
+
+[[package]]
+category = "main"
+description = "Python's filesystem abstraction layer"
+name = "fs"
+optional = false
+python-versions = "*"
+version = "2.4.12"
+
+[package.dependencies]
+appdirs = ">=1.4.3,<1.5.0"
+pytz = "*"
+setuptools = "*"
+six = ">=1.10,<2.0"
+
+[package.extras]
+scandir = ["scandir (>=1.5,<2.0)"]
 
 [[package]]
 category = "main"
@@ -26,8 +51,24 @@ optional = false
 python-versions = "*"
 version = "1.5.0"
 
+[[package]]
+category = "main"
+description = "World timezone definitions, modern and historical"
+name = "pytz"
+optional = false
+python-versions = "*"
+version = "2021.1"
+
+[[package]]
+category = "main"
+description = "Python 2 and 3 compatibility utilities"
+name = "six"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+version = "1.15.0"
+
 [metadata]
-content-hash = "8f9d895d5d2913179c352e408f0ddaf0fff35f8fb52a7250c8443684b70c196b"
+content-hash = "9d478a262c7814f5885e2bc0c946d4aaf91055535f930a14262223d324a6e6ad"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -35,11 +76,27 @@ anvil-parser = [
     {file = "anvil-parser-0.9.0.tar.gz", hash = "sha256:7cd457cf465c1d6d8f6dc52b0689a56e84e498c1a4c27802e725ede982698f9d"},
     {file = "anvil_parser-0.9.0-py3-none-any.whl", hash = "sha256:e3e6284194b7db0f2e7b7a4b2437e0215961eba1ef94ab1080c0a100ad8145dc"},
 ]
+appdirs = [
+    {file = "appdirs-1.4.4-py2.py3-none-any.whl", hash = "sha256:a841dacd6b99318a741b166adb07e19ee71a274450e68237b4650ca1055ab128"},
+    {file = "appdirs-1.4.4.tar.gz", hash = "sha256:7d5d0167b2b1ba821647616af46a749d1c653740dd0d2415100fe26e27afdf41"},
+]
 frozendict = [
     {file = "frozendict-1.2.tar.gz", hash = "sha256:774179f22db2ef8a106e9c38d4d1f8503864603db08de2e33be5b778230f6e45"},
+]
+fs = [
+    {file = "fs-2.4.12-py2.py3-none-any.whl", hash = "sha256:da6cc360677712ae27ac4be8a3ef404dd7970dbd1c3eebe87a25bebd94e84b4c"},
+    {file = "fs-2.4.12.tar.gz", hash = "sha256:c10ba188b14d6213a1ca950efd004931abbfa64b294c80bbf1045753831bf42f"},
 ]
 nbt = [
     {file = "NBT-1.5.0-py2.py3-none-any.whl", hash = "sha256:77dcf9d3fcb41a04fe7f407e902cf78c1dadc589d2e68d0a77e1b62b64a9be7e"},
     {file = "NBT-1.5.0-py3-none-any.whl", hash = "sha256:834505e9137d00ab5b098979b4e1d383a14061e80364a7f1b9587839b2743f5e"},
     {file = "NBT-1.5.0.tar.gz", hash = "sha256:f3585248e6747c6ede39be49a9d54ade8f63ce9beb42a6682c0323d32073c7f9"},
+]
+pytz = [
+    {file = "pytz-2021.1-py2.py3-none-any.whl", hash = "sha256:eb10ce3e7736052ed3623d49975ce333bcd712c7bb19a58b9e2089d4057d0798"},
+    {file = "pytz-2021.1.tar.gz", hash = "sha256:83a4a90894bf38e243cf052c8b58f381bfe9a7a483f6a9cab140bc7f702ac4da"},
+]
+six = [
+    {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},
+    {file = "six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"},
 ]
