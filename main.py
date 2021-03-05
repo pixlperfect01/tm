@@ -30,8 +30,8 @@ def to_obj_string(arr):
     for e in range(len(arr)):
         out += f"f {e*8+1} {e*8+1+1} {e*8+6+1} {e*8+3+1}\n"
         out += f"f {e*8+1} {e*8+1+1} {e*8+4+1} {e*8+2+1}\n"
-        out += f"f {e*8+1} {e*8+3+1} {e*8+5+1} {e*8+1+1}\n"
-        out += f"f {e*8+1} {e*8+1+4} {e*8+1+7} {e*8+1+1}\n"
+        out += f"f {e*8+1+4} {e*8+1+7} {e*8+1+8} {e*8+5}\n"
+        # out += f"f {} {} {} {}\n"
         # out += f"f {} {} {} {}\n"
         # out += f"f {} {} {} {}\n"
     return out
