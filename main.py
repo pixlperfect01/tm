@@ -7,7 +7,7 @@ def gen_chunk_section(seed, chunk_x, section_y, chunk_z):
         for y in range(0,5):
             for z in range(16):
                 if(rand_gen.randint(0, 8)>=y):
-                    out += [[x,y,z,0.0,0.0,0.0]]
+                    out += [[x,y,z,1.0,1.0,1.0]]
     return out
 def to_obj_string(arr):
     out = ""
