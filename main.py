@@ -13,18 +13,25 @@ def to_obj_string(arr):
     out = ""
     for e in arr:
         out += f"v {e[0]} {e[1]} {e[2]}\n"
+
         out += f"v {e[0]+1} {e[1]} {e[2]}\n"
+
         out += f"v {e[0]} {e[1]+1} {e[2]}\n"
+
         out += f"v {e[0]} {e[1]} {e[2]+1}\n"
+
         out += f"v {e[0]+1} {e[1]+1} {e[2]}\n"
+
         out += f"v {e[0]} {e[1]+1} {e[2]+1}\n"
+
         out += f"v {e[0]+1} {e[1]} {e[2]+1}\n"
+
         out += f"v {e[0]+1} {e[1]+1} {e[2]+1}\n"
     for e in range(len(arr)):
         out += f"f {e*8+1} {e*8+1+1} {e*8+6+1} {e*8+3+1}\n"
         out += f"f {e*8+1} {e*8+1+1} {e*8+4+1} {e*8+2+1}\n"
-        # out += f"f {e*8+1} {e*8+3+1} {e*8+1+1} {e*8+5+1}\n"
-        # out += f"f {} {} {} {}\n"
+        out += f"f {e*8+1} {e*8+3+1} {e*8+5+1} {e*8+1+1}\n"
+        out += f"f {e*8+1} {e*8+1+4} {e*8+1+7} {e*8+1+1}\n"
         # out += f"f {} {} {} {}\n"
         # out += f"f {} {} {} {}\n"
     return out
@@ -32,4 +39,4 @@ from fs.osfs import OSFS
 home_fs = OSFS("")
 home_fs.writetext('out.obj', to_obj_string(gen_chunk_section(1, 0, 0, 0)))
 home_fs.close()
-print(gen_chunk_section(1, 0, 0, 0))
+print(len(gen_chunk_section(1, 0, 0, 0)))
